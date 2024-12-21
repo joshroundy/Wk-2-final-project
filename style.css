@@ -19,6 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0n auto;
  }
 
  .nav__list {
@@ -32,4 +34,17 @@
  a {
     text-decoration: none;
     color: black;
+ }
+
+ .header__decription {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ .header__customer {
+    display: flex;
  }
