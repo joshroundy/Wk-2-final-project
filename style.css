@@ -170,10 +170,12 @@ img {
 
  */
 
-.features {
-   padding: 80px 0;
-   text-align: center;
-}
+ .features__wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
 
 .section__tag {
     font-size: 16px;
@@ -184,6 +186,32 @@ img {
     margin-top: 100px;
 }
 
-.features__title {
+.feature {
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
 
+.feature__list {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 32px 8px;
+   margin: 0 16;
+}
+
+.feature__img--wrapper {
+   display: flex;
+   padding: 20px;
+   border: 1px solid #e5e5eb;
+   border-radius: 500px;
+}
+
+.feature__list--text {
+   letter-spacing: 0.025;
+   line-height: 1;
+}
+
+.feature__list--para {
+   margin-top: 4px;
+   line-height: 2;
 }
