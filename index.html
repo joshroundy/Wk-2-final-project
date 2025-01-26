@@ -9,66 +9,70 @@
   </head>
   <body>
 <main>
-  <section id="landing">
-    <div class="container">
-    <div class="nav__container">
-    <div class="img__logo">
-      <img class="logo" src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="">
-      <h4>Treact</h4>
-    </div>
-      <div class="nav__list">
-        <ul class="menu__links">
-          <li>
-            <a href="About" class="menu__list">About</a>
-          </li>
-          <li>
-          </li>
-          <li>
-            <a href="Pricing" class="menu__list">Pricing</a>
-          </li>
-          <li>
-            <a href="Contact US" class="menu__list">Contact Us</a>
-          </li>
-          <li>
-            <a href="Login" class="menu__list">Login</a>
-          </li>
-          <li>
-            <a href="Sign Up" class="menu__list--primary">Sign Up</a>
-          </li>
-        </ul>
+  <section id="Landing">
+    <nav>
+      <div class="nav__row">
+        <div class="nav__logo">
+          <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt class="logo">
+          <div class="nav__logo--title">Treact</div>
+        </div>
+          <div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link">Login</a>
+            <a href="#" class="nav__link--signup">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
       </div>
-    </div>
-    <div class="header__decription">
+    </nav> 
+    <div class="modal">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+      </button>
+      <div class="modal__links">
+          <a class="modal__link">About</a>
+          <a class="modal__link">Blog</a>
+          <a class="modal__link">Pricing</a>
+          <a class="modal__link">Contact Us</a>
+          <a class="modal__link">Login</a>
+          <a class="modal__link modal__link--primary">Sign Up</a>
       </div>
-        <h1>Beautiful React Templates <span class="purple">For You</span></h1>
-        <p class="header__decipription--para">
-          Our templates are easy to setup, understand and customize. Fully
-          modular components with a variety of pages and components.
-        </p>
-        <div class="header__email">
-          <input
-            type="text"
-            class="header__email--input"
-            placeholder="Your E-mail Address"
-          />
-        <button class="header__email--btn">Get started</button>
-      </div>
-        <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-        <img
-          src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
-          alt=""
-        />
-      </div>
-      <figure class="header__img--wrapper">
-        <img
-          src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
-          alt=""
-          class="header__customers"
-        />
-      </figure>
-    </div>
-    </div>
   </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="header__decription">
+          <h1>Beautiful React Templates <span class="purple">for you</span></h1>
+          <p class="header__decription--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+          <div class="header__email">
+            <input type="text" class="header__email--input" placeholder="Your E-mail Address" data-nlok-ref-guid="6ee912ee-fc6b-456e-9da5-08527cb4ddfd" autocomplete="off"><div id="norton-idsafe-field-styling-divId" style="height:24px;max-width:24px;vertical-align:top; position:absolute; top:22px;left:241.5483870967742px;cursor:pointer;resize: both;z-index:2147483646;"><img id="norton-idsafe-field-logo-imgId" src="chrome-extension://admmjipmmciaobhojoghlmleefbicajg/images/npw-badge-icon.svg" style="height:24px; width:24px;display:block;"></div>
+            <button class="header__email--btn">Get Started</button>
+         </div>
+         <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+         <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt class="header__customers">
+        </div>
+        <figure class="header__img--wrapper">
+          <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt class="header__img">
+        </figure>
+      </div>
+    </div>
+    <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob">
+      <g transform="translate(300,300)">
+          <path d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
+      </g>
+   </svg>
+  </header>
   </section>
     <section id="features">
       <div class="container">
@@ -473,6 +477,7 @@
         <a class="footer__column--link">Founders</a>
         <a class="footer__column--link">Culture</a>
         <a class="footer__column--link">Onboarding</a>
+      </div>
     </div>
     <div class="footer__column">
       <div class="footer__column--title">LEGAL</div> 
