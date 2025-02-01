@@ -730,7 +730,6 @@ PRICING
 .plan__button {
    color: #f7fafc;
    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
-   height: 10px;
 }
 
 .plan__top, 
@@ -755,11 +754,6 @@ PRICING
 .plan__duration {
    font-weight: bold;
    line-height: 1.625;
-}
-
-.plan:nth-child(odd) .plan__name, 
-.plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
-   color: #1a202c;
 }
 
 .plan__price {
@@ -858,7 +852,6 @@ button {
 .plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
    color: #f7fafc;
    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
-   height: 10px;
 }
 
 
@@ -1383,6 +1376,10 @@ a {
 
 .start__button:nth-child(1) {
    margin-right: 0;
+}
+
+.start__button:nth-child(2) {
+   margin-top: 16px;
 }
 
    footer {
